@@ -1,0 +1,22 @@
+.venv/
+__pycache__/
+*.pyc
+*.nbc
+*.nbi
+my_results/
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.bbl
+paper/*.blg
+paper/*.fls
+paper/*.fdb_latexmk
+paper/rendered/
+.DS_Store
+
+rerun_backups/
+demo_output/
+revision/pdf_preview/
+
+# Restored automatically from the lossless publication archive
+revision/items.csv

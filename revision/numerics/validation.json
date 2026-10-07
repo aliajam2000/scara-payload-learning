@@ -1,0 +1,201 @@
+{
+  "status": "PASS",
+  "random_configurations": 200,
+  "errors": {
+    "independent_energy": 2.220446049250313e-16,
+    "reference_mass": 2.220446049250313e-16,
+    "christoffel": 3.9633074599976226e-11,
+    "inverse_forward": 3.9968028886505635e-15,
+    "regressor": 5.329070518200751e-15
+  },
+  "minimum_mass_eigenvalue": 0.009454496651754456,
+  "christoffel_by_joint": [
+    3.3103131347189674e-11,
+    3.9633074599976226e-11,
+    0.0,
+    0.0
+  ],
+  "regressor_by_joint": [
+    4.996003610813204e-16,
+    2.220446049250313e-16,
+    5.329070518200751e-15,
+    2.7755575615628914e-17
+  ],
+  "effort_units": [
+    "N m",
+    "N m",
+    "N",
+    "N m"
+  ],
+  "independent_integrator_state_error": [
+    7.771561172376096e-16,
+    1.6653345369377348e-15,
+    1.444677710793485e-13,
+    5.551115123125783e-17,
+    4.996003610813204e-16,
+    1.27675647831893e-15,
+    1.7666805518512518e-12,
+    7.771561172376096e-16
+  ],
+  "state_units": [
+    "rad",
+    "rad",
+    "m",
+    "rad",
+    "rad/s",
+    "rad/s",
+    "m/s",
+    "rad/s"
+  ],
+  "independent_integrator_max_state_error": 1.7666805518512518e-12,
+  "substep_comparisons": [
+    {
+      "seed": 11,
+      "family": "excited",
+      "time_difference_s": 0.0,
+      "position_difference_mm": 7.722401821810677e-09,
+      "yaw_difference_deg": 1.1050519185276842e-10,
+      "state_difference": [
+        2.8780755556567783e-11,
+        7.642475541302929e-11,
+        9.188483307553952e-13,
+        4.9572623783689096e-11,
+        5.339493062105072e-11,
+        1.2698640142888573e-10,
+        5.694715844175267e-12,
+        2.51163375254021e-10
+      ],
+      "same_success": true,
+      "success": true,
+      "estimate_difference": [
+        5.999128416256383e-10,
+        1.8187725631113594e-12
+      ]
+    },
+    {
+      "seed": 11,
+      "family": "low_yaw",
+      "time_difference_s": 0.0,
+      "position_difference_mm": 5.55286008095142e-09,
+      "yaw_difference_deg": 2.0966216460207504e-11,
+      "state_difference": [
+        2.156941292241754e-11,
+        5.515288226121129e-11,
+        9.188483307553952e-13,
+        3.3217428807574834e-11,
+        6.325993982120304e-11,
+        6.192833398865893e-11,
+        5.694715844175267e-12,
+        2.24230084478437e-10
+      ],
+      "same_success": true,
+      "success": true,
+      "estimate_difference": [
+        5.999128416256383e-10,
+        1.1683900374981349e-12
+      ]
+    },
+    {
+      "seed": 12,
+      "family": "excited",
+      "time_difference_s": 0.0,
+      "position_difference_mm": 6.926698728783155e-09,
+      "yaw_difference_deg": 5.499306266437679e-10,
+      "state_difference": [
+        2.058747616828782e-11,
+        6.27511376194434e-11,
+        4.3076653355456074e-14,
+        3.256545033636371e-11,
+        6.243981655502939e-11,
+        3.366524192662673e-11,
+        1.7828968688774274e-12,
+        1.226484115006768e-10
+      ],
+      "same_success": true,
+      "success": true,
+      "estimate_difference": [
+        5.367983835213863e-11,
+        9.955647417569935e-12
+      ]
+    },
+    {
+      "seed": 12,
+      "family": "low_yaw",
+      "time_difference_s": 0.0,
+      "position_difference_mm": 5.6758156475027035e-09,
+      "yaw_difference_deg": 1.5482940189364399e-10,
+      "state_difference": [
+        1.6061429963798446e-11,
+        5.0407567009358445e-11,
+        4.721223412218478e-14,
+        3.1643798692471137e-11,
+        6.473293862746532e-11,
+        5.190111459097563e-11,
+        1.9591501814950063e-12,
+        1.3582276514427505e-10
+      ],
+      "same_success": true,
+      "success": true,
+      "estimate_difference": [
+        5.1825099767199845e-11,
+        2.1943905026411414e-13
+      ]
+    },
+    {
+      "seed": 13,
+      "family": "excited",
+      "time_difference_s": 0.0,
+      "position_difference_mm": 4.7949594650310715e-09,
+      "yaw_difference_deg": 1.395372949851674e-10,
+      "state_difference": [
+        6.437517185986508e-12,
+        3.120248504018264e-11,
+        7.309708394132031e-13,
+        2.2329638138529617e-11,
+        4.797433912802351e-11,
+        1.5445378938501453e-10,
+        2.4143919150195967e-12,
+        5.999494477604284e-11
+      ],
+      "same_success": true,
+      "success": true,
+      "estimate_difference": [
+        6.582498990326258e-10,
+        1.3186049474533945e-12
+      ]
+    },
+    {
+      "seed": 13,
+      "family": "low_yaw",
+      "time_difference_s": 0.0,
+      "position_difference_mm": 4.279600076060906e-09,
+      "yaw_difference_deg": 2.328166026831294e-12,
+      "state_difference": [
+        3.3700819912496627e-12,
+        2.348954364350675e-11,
+        7.309708394132031e-13,
+        2.0160095814958368e-11,
+        4.8677054791460006e-11,
+        1.6153856301649033e-10,
+        2.4143919150195967e-12,
+        2.5516363544655918e-11
+      ],
+      "same_success": true,
+      "success": true,
+      "estimate_difference": [
+        6.582498990326258e-10,
+        1.0040700909597078e-11
+      ]
+    }
+  ],
+  "gates": {
+    "model_identities": true,
+    "positive_mass": true,
+    "independent_integrator": true,
+    "substep_position": true,
+    "substep_yaw": true,
+    "substep_success": true,
+    "short_batch_no_probe": true
+  },
+  "limitations": "Synthetic model consistency, not hardware validation. Six noiseless transfer substep checks; no continuous-time safety proof."
+}

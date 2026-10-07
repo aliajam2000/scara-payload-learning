@@ -1,0 +1,103 @@
+{
+  "status": "PASS",
+  "random_configurations": 200,
+  "errors": {
+    "independent_energy": 2.220446049250313e-16,
+    "reference_mass": 2.220446049250313e-16,
+    "christoffel": 3.9633074599976226e-11,
+    "inverse_forward": 3.9968028886505635e-15,
+    "regressor": 5.329070518200751e-15
+  },
+  "minimum_mass_eigenvalue": 0.009454496651754456,
+  "independent_integrator_max_state_error": 1.7666805518512518e-12,
+  "substep_comparisons": [
+    {
+      "seed": 11,
+      "family": "excited",
+      "time_difference_s": 0.0,
+      "position_difference_mm": 7.722401821810677e-09,
+      "yaw_difference_deg": 1.1050519185276842e-10,
+      "same_success": true,
+      "success": true,
+      "estimate_difference": [
+        5.999128416256383e-10,
+        1.8187725631113594e-12
+      ]
+    },
+    {
+      "seed": 11,
+      "family": "low_yaw",
+      "time_difference_s": 0.0,
+      "position_difference_mm": 5.55286008095142e-09,
+      "yaw_difference_deg": 2.0966216460207504e-11,
+      "same_success": true,
+      "success": true,
+      "estimate_difference": [
+        5.999128416256383e-10,
+        1.1683900374981349e-12
+      ]
+    },
+    {
+      "seed": 12,
+      "family": "excited",
+      "time_difference_s": 0.0,
+      "position_difference_mm": 6.926698728783155e-09,
+      "yaw_difference_deg": 5.499306266437679e-10,
+      "same_success": true,
+      "success": true,
+      "estimate_difference": [
+        5.367983835213863e-11,
+        9.955647417569935e-12
+      ]
+    },
+    {
+      "seed": 12,
+      "family": "low_yaw",
+      "time_difference_s": 0.0,
+      "position_difference_mm": 5.6758156475027035e-09,
+      "yaw_difference_deg": 1.5482940189364399e-10,
+      "same_success": true,
+      "success": true,
+      "estimate_difference": [
+        5.1825099767199845e-11,
+        2.1943905026411414e-13
+      ]
+    },
+    {
+      "seed": 13,
+      "family": "excited",
+      "time_difference_s": 0.0,
+      "position_difference_mm": 4.7949594650310715e-09,
+      "yaw_difference_deg": 1.395372949851674e-10,
+      "same_success": true,
+      "success": true,
+      "estimate_difference": [
+        6.582498990326258e-10,
+        1.3186049474533945e-12
+      ]
+    },
+    {
+      "seed": 13,
+      "family": "low_yaw",
+      "time_difference_s": 0.0,
+      "position_difference_mm": 4.279600076060906e-09,
+      "yaw_difference_deg": 2.328166026831294e-12,
+      "same_success": true,
+      "success": true,
+      "estimate_difference": [
+        6.582498990326258e-10,
+        1.0040700909597078e-11
+      ]
+    }
+  ],
+  "gates": {
+    "model_identities": true,
+    "positive_mass": true,
+    "independent_integrator": true,
+    "substep_position": true,
+    "substep_yaw": true,
+    "substep_success": true,
+    "short_batch_no_probe": true
+  },
+  "limitations": "Synthetic model consistency, not hardware validation. Six noiseless transfer substep checks; no continuous-time safety proof."
+}

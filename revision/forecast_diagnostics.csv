@@ -1,0 +1,9 @@
+family,parameter,prediction,item_observations,median_predicted_over_realized_sd,mean_absolute_log_ratio,note
+excited,mass,pred,2700,1.000000433232378,0.00054877577703961,"Repeated items within 27 successful seeds; descriptive forecast diagnostics, not independent samples."
+excited,mass,rollout,2700,1.036373091022317,0.04461595101319558,"Repeated items within 27 successful seeds; descriptive forecast diagnostics, not independent samples."
+excited,inertia,pred,2700,1.0000336603563067,0.0005696779620844617,"Repeated items within 27 successful seeds; descriptive forecast diagnostics, not independent samples."
+excited,inertia,rollout,2700,0.9759714881140613,0.05210866947713976,"Repeated items within 27 successful seeds; descriptive forecast diagnostics, not independent samples."
+low_yaw,mass,pred,2700,1.000000676945102,0.0007507528532822033,"Repeated items within 27 successful seeds; descriptive forecast diagnostics, not independent samples."
+low_yaw,mass,rollout,2700,1.0478361174757926,0.048253113599891664,"Repeated items within 27 successful seeds; descriptive forecast diagnostics, not independent samples."
+low_yaw,inertia,pred,2700,1.0001791908940487,0.0006599779188327154,"Repeated items within 27 successful seeds; descriptive forecast diagnostics, not independent samples."
+low_yaw,inertia,rollout,2700,0.9879107044713171,0.04215996458659585,"Repeated items within 27 successful seeds; descriptive forecast diagnostics, not independent samples."

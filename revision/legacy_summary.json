@@ -1,0 +1,722 @@
+[
+  {
+    "source": "batches",
+    "family": "excited",
+    "N": 1,
+    "method": "always_probe",
+    "n": 30,
+    "success": 27,
+    "success_robot_mean_s": 2.571851851851852,
+    "J_mean_s": 3.3302807257000286
+  },
+  {
+    "source": "batches",
+    "family": "excited",
+    "N": 1,
+    "method": "batch_aware",
+    "n": 30,
+    "success": 27,
+    "success_robot_mean_s": 1.7758518518518522,
+    "J_mean_s": 2.6139348331000147
+  },
+  {
+    "source": "batches",
+    "family": "excited",
+    "N": 1,
+    "method": "fixed_nominal",
+    "n": 30,
+    "success": 27,
+    "success_robot_mean_s": 1.9825925925925927,
+    "J_mean_s": 2.819465697399964
+  },
+  {
+    "source": "batches",
+    "family": "excited",
+    "N": 1,
+    "method": "ignore_passive",
+    "n": 30,
+    "success": 27,
+    "success_robot_mean_s": 1.7758518518518522,
+    "J_mean_s": 2.6139278273333506
+  },
+  {
+    "source": "batches",
+    "family": "excited",
+    "N": 1,
+    "method": "oracle",
+    "n": 30,
+    "success": 30,
+    "success_robot_mean_s": 1.6526666666666663,
+    "J_mean_s": 1.652736290400005
+  },
+  {
+    "source": "batches",
+    "family": "excited",
+    "N": 1,
+    "method": "passive",
+    "n": 30,
+    "success": 27,
+    "success_robot_mean_s": 1.7758518518518522,
+    "J_mean_s": 2.6138622398333085
+  },
+  {
+    "source": "batches",
+    "family": "excited",
+    "N": 5,
+    "method": "always_probe",
+    "n": 30,
+    "success": 27,
+    "success_robot_mean_s": 9.186962962962964,
+    "J_mean_s": 13.284124102266611
+  },
+  {
+    "source": "batches",
+    "family": "excited",
+    "N": 5,
+    "method": "batch_aware",
+    "n": 30,
+    "success": 27,
+    "success_robot_mean_s": 8.390962962962963,
+    "J_mean_s": 12.568051495833313
+  },
+  {
+    "source": "batches",
+    "family": "excited",
+    "N": 5,
+    "method": "fixed_nominal",
+    "n": 30,
+    "success": 27,
+    "success_robot_mean_s": 9.913407407407407,
+    "J_mean_s": 13.957452842966665
+  },
+  {
+    "source": "batches",
+    "family": "excited",
+    "N": 5,
+    "method": "ignore_passive",
+    "n": 30,
+    "success": 27,
+    "success_robot_mean_s": 8.390962962962963,
+    "J_mean_s": 12.567798387200032
+  },
+  {
+    "source": "batches",
+    "family": "excited",
+    "N": 5,
+    "method": "oracle",
+    "n": 30,
+    "success": 30,
+    "success_robot_mean_s": 8.263333333333334,
+    "J_mean_s": 8.263685904466675
+  },
+  {
+    "source": "batches",
+    "family": "excited",
+    "N": 5,
+    "method": "passive",
+    "n": 30,
+    "success": 27,
+    "success_robot_mean_s": 8.390962962962963,
+    "J_mean_s": 12.567717666866658
+  },
+  {
+    "source": "batches",
+    "family": "excited",
+    "N": 20,
+    "method": "always_probe",
+    "n": 30,
+    "success": 27,
+    "success_robot_mean_s": 33.99362962962962,
+    "J_mean_s": 50.61109690179989
+  },
+  {
+    "source": "batches",
+    "family": "excited",
+    "N": 20,
+    "method": "batch_aware",
+    "n": 30,
+    "success": 27,
+    "success_robot_mean_s": 33.197629629629624,
+    "J_mean_s": 49.89597879326655
+  },
+  {
+    "source": "batches",
+    "family": "excited",
+    "N": 20,
+    "method": "fixed_nominal",
+    "n": 30,
+    "success": 27,
+    "success_robot_mean_s": 39.6534074074074,
+    "J_mean_s": 55.72444339406664
+  },
+  {
+    "source": "batches",
+    "family": "excited",
+    "N": 20,
+    "method": "ignore_passive",
+    "n": 30,
+    "success": 27,
+    "success_robot_mean_s": 33.99362962962962,
+    "J_mean_s": 50.61119453756654
+  },
+  {
+    "source": "batches",
+    "family": "excited",
+    "N": 20,
+    "method": "oracle",
+    "n": 30,
+    "success": 30,
+    "success_robot_mean_s": 33.053333333333335,
+    "J_mean_s": 33.0548662351
+  },
+  {
+    "source": "batches",
+    "family": "excited",
+    "N": 20,
+    "method": "passive",
+    "n": 30,
+    "success": 27,
+    "success_robot_mean_s": 33.197629629629624,
+    "J_mean_s": 49.89469049000001
+  },
+  {
+    "source": "batches",
+    "family": "low_yaw",
+    "N": 1,
+    "method": "always_probe",
+    "n": 30,
+    "success": 27,
+    "success_robot_mean_s": 2.571851851851852,
+    "J_mean_s": 3.3302677692999794
+  },
+  {
+    "source": "batches",
+    "family": "low_yaw",
+    "N": 1,
+    "method": "batch_aware",
+    "n": 30,
+    "success": 27,
+    "success_robot_mean_s": 1.7758518518518522,
+    "J_mean_s": 2.6139431414999765
+  },
+  {
+    "source": "batches",
+    "family": "low_yaw",
+    "N": 1,
+    "method": "fixed_nominal",
+    "n": 30,
+    "success": 27,
+    "success_robot_mean_s": 1.978074074074074,
+    "J_mean_s": 2.815399293033313
+  },
+  {
+    "source": "batches",
+    "family": "low_yaw",
+    "N": 1,
+    "method": "ignore_passive",
+    "n": 30,
+    "success": 27,
+    "success_robot_mean_s": 1.7758518518518522,
+    "J_mean_s": 2.6139282438333495
+  },
+  {
+    "source": "batches",
+    "family": "low_yaw",
+    "N": 1,
+    "method": "oracle",
+    "n": 30,
+    "success": 30,
+    "success_robot_mean_s": 1.6526666666666663,
+    "J_mean_s": 1.6527422153000413
+  },
+  {
+    "source": "batches",
+    "family": "low_yaw",
+    "N": 1,
+    "method": "passive",
+    "n": 30,
+    "success": 27,
+    "success_robot_mean_s": 1.7758518518518522,
+    "J_mean_s": 2.6138714437333577
+  },
+  {
+    "source": "batches",
+    "family": "low_yaw",
+    "N": 5,
+    "method": "always_probe",
+    "n": 30,
+    "success": 27,
+    "success_robot_mean_s": 9.186962962962964,
+    "J_mean_s": 13.284118547733266
+  },
+  {
+    "source": "batches",
+    "family": "low_yaw",
+    "N": 5,
+    "method": "batch_aware",
+    "n": 30,
+    "success": 27,
+    "success_robot_mean_s": 8.513259259259259,
+    "J_mean_s": 12.678417405333278
+  },
+  {
+    "source": "batches",
+    "family": "low_yaw",
+    "N": 5,
+    "method": "fixed_nominal",
+    "n": 30,
+    "success": 27,
+    "success_robot_mean_s": 9.891037037037037,
+    "J_mean_s": 13.937354705466667
+  },
+  {
+    "source": "batches",
+    "family": "low_yaw",
+    "N": 5,
+    "method": "ignore_passive",
+    "n": 30,
+    "success": 27,
+    "success_robot_mean_s": 8.513259259259259,
+    "J_mean_s": 12.677873411366487
+  },
+  {
+    "source": "batches",
+    "family": "low_yaw",
+    "N": 5,
+    "method": "oracle",
+    "n": 30,
+    "success": 30,
+    "success_robot_mean_s": 8.263333333333334,
+    "J_mean_s": 8.26371138243321
+  },
+  {
+    "source": "batches",
+    "family": "low_yaw",
+    "N": 5,
+    "method": "passive",
+    "n": 30,
+    "success": 27,
+    "success_robot_mean_s": 8.513259259259259,
+    "J_mean_s": 12.677818059866668
+  },
+  {
+    "source": "batches",
+    "family": "low_yaw",
+    "N": 20,
+    "method": "always_probe",
+    "n": 30,
+    "success": 27,
+    "success_robot_mean_s": 33.99362962962962,
+    "J_mean_s": 50.61106207353329
+  },
+  {
+    "source": "batches",
+    "family": "low_yaw",
+    "N": 20,
+    "method": "batch_aware",
+    "n": 30,
+    "success": 27,
+    "success_robot_mean_s": 33.57414814814814,
+    "J_mean_s": 50.234792637566684
+  },
+  {
+    "source": "batches",
+    "family": "low_yaw",
+    "N": 20,
+    "method": "fixed_nominal",
+    "n": 30,
+    "success": 27,
+    "success_robot_mean_s": 39.56414814814814,
+    "J_mean_s": 55.64411515433349
+  },
+  {
+    "source": "batches",
+    "family": "low_yaw",
+    "N": 20,
+    "method": "ignore_passive",
+    "n": 30,
+    "success": 27,
+    "success_robot_mean_s": 33.99362962962962,
+    "J_mean_s": 50.61121703760004
+  },
+  {
+    "source": "batches",
+    "family": "low_yaw",
+    "N": 20,
+    "method": "oracle",
+    "n": 30,
+    "success": 30,
+    "success_robot_mean_s": 33.053333333333335,
+    "J_mean_s": 33.054711304133335
+  },
+  {
+    "source": "batches",
+    "family": "low_yaw",
+    "N": 20,
+    "method": "passive",
+    "n": 30,
+    "success": 27,
+    "success_robot_mean_s": 33.57414814814814,
+    "J_mean_s": 50.23354642943339
+  },
+  {
+    "source": "stress",
+    "family": "excited",
+    "N": 5,
+    "method": "always_probe",
+    "n": 10,
+    "success": 10,
+    "success_robot_mean_s": 9.2888,
+    "J_mean_s": 9.289187277399932
+  },
+  {
+    "source": "stress",
+    "family": "excited",
+    "N": 5,
+    "method": "batch_aware",
+    "n": 10,
+    "success": 10,
+    "success_robot_mean_s": 8.492799999999999,
+    "J_mean_s": 8.493573403199923
+  },
+  {
+    "source": "stress",
+    "family": "excited",
+    "N": 5,
+    "method": "fixed_nominal",
+    "n": 10,
+    "success": 10,
+    "success_robot_mean_s": 10.1152,
+    "J_mean_s": 10.115741279699996
+  },
+  {
+    "source": "stress",
+    "family": "excited",
+    "N": 5,
+    "method": "ignore_passive",
+    "n": 10,
+    "success": 10,
+    "success_robot_mean_s": 8.492799999999999,
+    "J_mean_s": 8.493280147900043
+  },
+  {
+    "source": "stress",
+    "family": "excited",
+    "N": 5,
+    "method": "oracle",
+    "n": 10,
+    "success": 10,
+    "success_robot_mean_s": 8.364,
+    "J_mean_s": 8.364431798900126
+  },
+  {
+    "source": "stress",
+    "family": "excited",
+    "N": 5,
+    "method": "passive",
+    "n": 10,
+    "success": 10,
+    "success_robot_mean_s": 8.492799999999999,
+    "J_mean_s": 8.493183770699954
+  },
+  {
+    "source": "stress",
+    "family": "low_yaw",
+    "N": 5,
+    "method": "always_probe",
+    "n": 10,
+    "success": 10,
+    "success_robot_mean_s": 9.2888,
+    "J_mean_s": 9.289144311900245
+  },
+  {
+    "source": "stress",
+    "family": "low_yaw",
+    "N": 5,
+    "method": "batch_aware",
+    "n": 10,
+    "success": 10,
+    "success_robot_mean_s": 8.606,
+    "J_mean_s": 8.606760713499881
+  },
+  {
+    "source": "stress",
+    "family": "low_yaw",
+    "N": 5,
+    "method": "fixed_nominal",
+    "n": 10,
+    "success": 10,
+    "success_robot_mean_s": 10.100800000000001,
+    "J_mean_s": 10.101151536900236
+  },
+  {
+    "source": "stress",
+    "family": "low_yaw",
+    "N": 5,
+    "method": "ignore_passive",
+    "n": 10,
+    "success": 10,
+    "success_robot_mean_s": 8.606,
+    "J_mean_s": 8.606449733700021
+  },
+  {
+    "source": "stress",
+    "family": "low_yaw",
+    "N": 5,
+    "method": "oracle",
+    "n": 10,
+    "success": 10,
+    "success_robot_mean_s": 8.364,
+    "J_mean_s": 8.364351150500115
+  },
+  {
+    "source": "stress",
+    "family": "low_yaw",
+    "N": 5,
+    "method": "passive",
+    "n": 10,
+    "success": 10,
+    "success_robot_mean_s": 8.606,
+    "J_mean_s": 8.606355638000133
+  },
+  {
+    "source": "development",
+    "family": "excited",
+    "N": 1,
+    "method": "always_probe",
+    "n": 5,
+    "success": 5,
+    "success_robot_mean_s": 2.5960000000000005,
+    "J_mean_s": 2.5960752085999244
+  },
+  {
+    "source": "development",
+    "family": "excited",
+    "N": 1,
+    "method": "batch_aware",
+    "n": 5,
+    "success": 5,
+    "success_robot_mean_s": 1.8,
+    "J_mean_s": 1.8001538290000099
+  },
+  {
+    "source": "development",
+    "family": "excited",
+    "N": 1,
+    "method": "fixed_nominal",
+    "n": 5,
+    "success": 5,
+    "success_robot_mean_s": 2.0556,
+    "J_mean_s": 2.0556937412000442
+  },
+  {
+    "source": "development",
+    "family": "excited",
+    "N": 1,
+    "method": "ignore_passive",
+    "n": 5,
+    "success": 5,
+    "success_robot_mean_s": 1.8,
+    "J_mean_s": 1.8001443465999956
+  },
+  {
+    "source": "development",
+    "family": "excited",
+    "N": 1,
+    "method": "oracle",
+    "n": 5,
+    "success": 5,
+    "success_robot_mean_s": 1.6623999999999999,
+    "J_mean_s": 1.6624819370000044
+  },
+  {
+    "source": "development",
+    "family": "excited",
+    "N": 1,
+    "method": "passive",
+    "n": 5,
+    "success": 5,
+    "success_robot_mean_s": 1.8,
+    "J_mean_s": 1.8000750863999884
+  },
+  {
+    "source": "development",
+    "family": "excited",
+    "N": 5,
+    "method": "always_probe",
+    "n": 5,
+    "success": 5,
+    "success_robot_mean_s": 9.2456,
+    "J_mean_s": 9.245983055599968
+  },
+  {
+    "source": "development",
+    "family": "excited",
+    "N": 5,
+    "method": "batch_aware",
+    "n": 5,
+    "success": 5,
+    "success_robot_mean_s": 8.4496,
+    "J_mean_s": 8.450383199399871
+  },
+  {
+    "source": "development",
+    "family": "excited",
+    "N": 5,
+    "method": "fixed_nominal",
+    "n": 5,
+    "success": 5,
+    "success_robot_mean_s": 10.2768,
+    "J_mean_s": 10.277177081200055
+  },
+  {
+    "source": "development",
+    "family": "excited",
+    "N": 5,
+    "method": "ignore_passive",
+    "n": 5,
+    "success": 5,
+    "success_robot_mean_s": 8.4496,
+    "J_mean_s": 8.45006858899998
+  },
+  {
+    "source": "development",
+    "family": "excited",
+    "N": 5,
+    "method": "oracle",
+    "n": 5,
+    "success": 5,
+    "success_robot_mean_s": 8.312000000000001,
+    "J_mean_s": 8.312372534200005
+  },
+  {
+    "source": "development",
+    "family": "excited",
+    "N": 5,
+    "method": "passive",
+    "n": 5,
+    "success": 5,
+    "success_robot_mean_s": 8.4496,
+    "J_mean_s": 8.449973974599962
+  },
+  {
+    "source": "development",
+    "family": "low_yaw",
+    "N": 1,
+    "method": "always_probe",
+    "n": 5,
+    "success": 5,
+    "success_robot_mean_s": 2.5960000000000005,
+    "J_mean_s": 2.5960779706000463
+  },
+  {
+    "source": "development",
+    "family": "low_yaw",
+    "N": 1,
+    "method": "batch_aware",
+    "n": 5,
+    "success": 5,
+    "success_robot_mean_s": 1.8,
+    "J_mean_s": 1.8001591611999401
+  },
+  {
+    "source": "development",
+    "family": "low_yaw",
+    "N": 1,
+    "method": "fixed_nominal",
+    "n": 5,
+    "success": 5,
+    "success_robot_mean_s": 2.0504000000000002,
+    "J_mean_s": 2.0505197518000027
+  },
+  {
+    "source": "development",
+    "family": "low_yaw",
+    "N": 1,
+    "method": "ignore_passive",
+    "n": 5,
+    "success": 5,
+    "success_robot_mean_s": 1.8,
+    "J_mean_s": 1.8001758464000204
+  },
+  {
+    "source": "development",
+    "family": "low_yaw",
+    "N": 1,
+    "method": "oracle",
+    "n": 5,
+    "success": 5,
+    "success_robot_mean_s": 1.6623999999999999,
+    "J_mean_s": 1.6624705528000252
+  },
+  {
+    "source": "development",
+    "family": "low_yaw",
+    "N": 1,
+    "method": "passive",
+    "n": 5,
+    "success": 5,
+    "success_robot_mean_s": 1.8,
+    "J_mean_s": 1.800072559199998
+  },
+  {
+    "source": "development",
+    "family": "low_yaw",
+    "N": 5,
+    "method": "always_probe",
+    "n": 5,
+    "success": 5,
+    "success_robot_mean_s": 9.2456,
+    "J_mean_s": 9.245978577799985
+  },
+  {
+    "source": "development",
+    "family": "low_yaw",
+    "N": 5,
+    "method": "batch_aware",
+    "n": 5,
+    "success": 5,
+    "success_robot_mean_s": 8.561599999999999,
+    "J_mean_s": 8.562322550800058
+  },
+  {
+    "source": "development",
+    "family": "low_yaw",
+    "N": 5,
+    "method": "fixed_nominal",
+    "n": 5,
+    "success": 5,
+    "success_robot_mean_s": 10.251999999999999,
+    "J_mean_s": 10.25238271820008
+  },
+  {
+    "source": "development",
+    "family": "low_yaw",
+    "N": 5,
+    "method": "ignore_passive",
+    "n": 5,
+    "success": 5,
+    "success_robot_mean_s": 8.561599999999999,
+    "J_mean_s": 8.562030445600067
+  },
+  {
+    "source": "development",
+    "family": "low_yaw",
+    "N": 5,
+    "method": "oracle",
+    "n": 5,
+    "success": 5,
+    "success_robot_mean_s": 8.312000000000001,
+    "J_mean_s": 8.312366483400035
+  },
+  {
+    "source": "development",
+    "family": "low_yaw",
+    "N": 5,
+    "method": "passive",
+    "n": 5,
+    "success": 5,
+    "success_robot_mean_s": 8.561599999999999,
+    "J_mean_s": 8.561959197800025
+  }
+]

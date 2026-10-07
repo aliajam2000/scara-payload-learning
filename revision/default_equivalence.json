@@ -1,0 +1,302 @@
+[
+  {
+    "seed": 11,
+    "method": "passive",
+    "checks": {
+      "robot_time_s": true,
+      "completed": true,
+      "success": true,
+      "probes": true,
+      "max_acceleration_ratio": true,
+      "max_velocity_ratio": true
+    },
+    "differences": {
+      "robot_time_s": 0.0,
+      "completed": 0.0,
+      "success": 0.0,
+      "probes": 0.0,
+      "max_acceleration_ratio": 0.0,
+      "max_velocity_ratio": 0.0
+    }
+  },
+  {
+    "seed": 11,
+    "method": "always_probe",
+    "checks": {
+      "robot_time_s": true,
+      "completed": true,
+      "success": true,
+      "probes": true,
+      "max_acceleration_ratio": true,
+      "max_velocity_ratio": true
+    },
+    "differences": {
+      "robot_time_s": 0.0,
+      "completed": 0.0,
+      "success": 0.0,
+      "probes": 0.0,
+      "max_acceleration_ratio": 0.0,
+      "max_velocity_ratio": 0.0
+    }
+  },
+  {
+    "seed": 11,
+    "method": "batch_aware",
+    "checks": {
+      "robot_time_s": true,
+      "completed": true,
+      "success": true,
+      "probes": true,
+      "max_acceleration_ratio": true,
+      "max_velocity_ratio": true
+    },
+    "differences": {
+      "robot_time_s": 0.0,
+      "completed": 0.0,
+      "success": 0.0,
+      "probes": 0.0,
+      "max_acceleration_ratio": 0.0,
+      "max_velocity_ratio": 0.0
+    }
+  },
+  {
+    "seed": 11,
+    "method": "ignore_passive",
+    "checks": {
+      "robot_time_s": true,
+      "completed": true,
+      "success": true,
+      "probes": true,
+      "max_acceleration_ratio": true,
+      "max_velocity_ratio": true
+    },
+    "differences": {
+      "robot_time_s": 0.0,
+      "completed": 0.0,
+      "success": 0.0,
+      "probes": 0.0,
+      "max_acceleration_ratio": 0.0,
+      "max_velocity_ratio": 0.0
+    }
+  },
+  {
+    "seed": 11,
+    "method": "oracle",
+    "checks": {
+      "robot_time_s": true,
+      "completed": true,
+      "success": true,
+      "probes": true,
+      "max_acceleration_ratio": true,
+      "max_velocity_ratio": true
+    },
+    "differences": {
+      "robot_time_s": 0.0,
+      "completed": 0.0,
+      "success": 0.0,
+      "probes": 0.0,
+      "max_acceleration_ratio": 0.0,
+      "max_velocity_ratio": 0.0
+    }
+  },
+  {
+    "seed": 1001,
+    "method": "passive",
+    "checks": {
+      "robot_time_s": true,
+      "completed": true,
+      "success": true,
+      "probes": true,
+      "max_acceleration_ratio": true,
+      "max_velocity_ratio": true
+    },
+    "differences": {
+      "robot_time_s": 0.0,
+      "completed": 0.0,
+      "success": 0.0,
+      "probes": 0.0,
+      "max_acceleration_ratio": 0.0,
+      "max_velocity_ratio": 0.0
+    }
+  },
+  {
+    "seed": 1001,
+    "method": "always_probe",
+    "checks": {
+      "robot_time_s": true,
+      "completed": true,
+      "success": true,
+      "probes": true,
+      "max_acceleration_ratio": true,
+      "max_velocity_ratio": true
+    },
+    "differences": {
+      "robot_time_s": -1.7763568394002505e-15,
+      "completed": 0.0,
+      "success": 0.0,
+      "probes": 0.0,
+      "max_acceleration_ratio": 0.0,
+      "max_velocity_ratio": 0.0
+    }
+  },
+  {
+    "seed": 1001,
+    "method": "batch_aware",
+    "checks": {
+      "robot_time_s": true,
+      "completed": true,
+      "success": true,
+      "probes": true,
+      "max_acceleration_ratio": true,
+      "max_velocity_ratio": true
+    },
+    "differences": {
+      "robot_time_s": 0.0,
+      "completed": 0.0,
+      "success": 0.0,
+      "probes": 0.0,
+      "max_acceleration_ratio": 0.0,
+      "max_velocity_ratio": 0.0
+    }
+  },
+  {
+    "seed": 1001,
+    "method": "ignore_passive",
+    "checks": {
+      "robot_time_s": true,
+      "completed": true,
+      "success": true,
+      "probes": true,
+      "max_acceleration_ratio": true,
+      "max_velocity_ratio": true
+    },
+    "differences": {
+      "robot_time_s": 0.0,
+      "completed": 0.0,
+      "success": 0.0,
+      "probes": 0.0,
+      "max_acceleration_ratio": 0.0,
+      "max_velocity_ratio": 0.0
+    }
+  },
+  {
+    "seed": 1001,
+    "method": "oracle",
+    "checks": {
+      "robot_time_s": true,
+      "completed": true,
+      "success": true,
+      "probes": true,
+      "max_acceleration_ratio": true,
+      "max_velocity_ratio": true
+    },
+    "differences": {
+      "robot_time_s": -8.881784197001252e-16,
+      "completed": 0.0,
+      "success": 0.0,
+      "probes": 0.0,
+      "max_acceleration_ratio": 0.0,
+      "max_velocity_ratio": 0.0
+    }
+  },
+  {
+    "seed": 1004,
+    "method": "passive",
+    "checks": {
+      "robot_time_s": true,
+      "completed": true,
+      "success": true,
+      "probes": true,
+      "max_acceleration_ratio": true,
+      "max_velocity_ratio": true
+    },
+    "differences": {
+      "robot_time_s": 0.0,
+      "completed": 0.0,
+      "success": 0.0,
+      "probes": 0.0,
+      "max_acceleration_ratio": 0.0,
+      "max_velocity_ratio": 0.0
+    }
+  },
+  {
+    "seed": 1004,
+    "method": "always_probe",
+    "checks": {
+      "robot_time_s": true,
+      "completed": true,
+      "success": true,
+      "probes": true,
+      "max_acceleration_ratio": true,
+      "max_velocity_ratio": true
+    },
+    "differences": {
+      "robot_time_s": 0.0,
+      "completed": 0.0,
+      "success": 0.0,
+      "probes": 0.0,
+      "max_acceleration_ratio": 0.0,
+      "max_velocity_ratio": 0.0
+    }
+  },
+  {
+    "seed": 1004,
+    "method": "batch_aware",
+    "checks": {
+      "robot_time_s": true,
+      "completed": true,
+      "success": true,
+      "probes": true,
+      "max_acceleration_ratio": true,
+      "max_velocity_ratio": true
+    },
+    "differences": {
+      "robot_time_s": 0.0,
+      "completed": 0.0,
+      "success": 0.0,
+      "probes": 0.0,
+      "max_acceleration_ratio": 0.0,
+      "max_velocity_ratio": 0.0
+    }
+  },
+  {
+    "seed": 1004,
+    "method": "ignore_passive",
+    "checks": {
+      "robot_time_s": true,
+      "completed": true,
+      "success": true,
+      "probes": true,
+      "max_acceleration_ratio": true,
+      "max_velocity_ratio": true
+    },
+    "differences": {
+      "robot_time_s": 0.0,
+      "completed": 0.0,
+      "success": 0.0,
+      "probes": 0.0,
+      "max_acceleration_ratio": 0.0,
+      "max_velocity_ratio": 0.0
+    }
+  },
+  {
+    "seed": 1004,
+    "method": "oracle",
+    "checks": {
+      "robot_time_s": true,
+      "completed": true,
+      "success": true,
+      "probes": true,
+      "max_acceleration_ratio": true,
+      "max_velocity_ratio": true
+    },
+    "differences": {
+      "robot_time_s": -8.881784197001252e-16,
+      "completed": 0.0,
+      "success": 0.0,
+      "probes": 0.0,
+      "max_acceleration_ratio": 0.0,
+      "max_velocity_ratio": 0.0
+    }
+  }
+]

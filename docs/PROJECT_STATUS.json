@@ -1,0 +1,31 @@
+{
+  "computational_revision": "complete",
+  "post_review_batches": 6050,
+  "independent_scenarios": false,
+  "phases": [
+    {
+      "phase": 1,
+      "name": "audit_and_design",
+      "status": "complete"
+    },
+    {
+      "phase": 2,
+      "name": "experiments_and_analysis",
+      "status": "complete"
+    },
+    {
+      "phase": 3,
+      "name": "manuscript_response_and_delivery",
+      "status": "complete"
+    }
+  ],
+  "submission": "not_submitted",
+  "venue": null,
+  "hardware_validation": false,
+  "remaining": [
+    "venue/template/page limit",
+    "authors and affiliations",
+    "license and disclosures",
+    "venue artifact delivery"
+  ]
+}

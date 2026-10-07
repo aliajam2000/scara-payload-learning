@@ -1,0 +1,40 @@
+{
+  "status": "sequential post-review exploratory refinement; selected after inspecting noise10 N20 and N60",
+  "frozen_utc": "2026-10-07T07:29:19.640375+00:00",
+  "N": [
+    5,
+    10,
+    15,
+    25,
+    30
+  ],
+  "seeds": [
+    1001,
+    1002,
+    1003,
+    1004,
+    1005,
+    1006,
+    1007,
+    1008,
+    1009,
+    1010
+  ],
+  "methods": [
+    "passive",
+    "always_probe",
+    "batch_aware",
+    "ignore_passive",
+    "uncertainty_trigger"
+  ],
+  "family": "low_yaw",
+  "settings": {
+    "noise": 10.0
+  },
+  "hashes": {
+    "src/model_r1.py": "23469d090e4f04e73b3bfbbfe6cacbac66c2f54ae0a0d6500cdb6bef49c4a218",
+    "src/revision_experiment.py": "28cebac9ecca022608097dfe601fa9caad8cb524f0617336bf1075d96446a02d",
+    "src/revision_break_even.py": "a45e6a927cc191236d7858907d434c9b1fce6b156d9c14e2c71b7266ed362be6"
+  },
+  "rationale": "Bracket the observed mean sign change using fixed simulator and policies; not an independent validation or threshold tuning."
+}

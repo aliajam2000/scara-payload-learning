@@ -1,0 +1,23 @@
+{
+  "frozen_before_heldout_run_utc": "2026-10-06T09:23:47.777645+00:00",
+  "sha256": {
+    "protocol.json": "dd3550cefcecd0ccaf6f71b09707c2baad4bce6bbd20d006f101770a817c4ad9",
+    "robot_config.json": "2b17d66378fac5205daf75efddb5783a03f01febc3a6d1f1022d3019b10f293b",
+    "src/__init__.py": "5d7cda60ed54c57fd89d87ae595643c37b934f5ebb7830f415d4749930d1e5a0",
+    "src/analysis.py": "ae455630b4b5844c96f13a1ff2f4c401215ef16874e434b6a7985e3ccaeec03c",
+    "src/experiment.py": "120bfd864a2ccbe97933e286f702346d66f802535ec94160d299117d74a821e5",
+    "src/model.py": "60d52481390820e195a00057e183ef8580909a4b2678c866360591467ee82a4a",
+    "src/validation.py": "e123bedcb8425b94861f58b66b7d1de4f7cd614a4fd5f8ef35dac1804197803f",
+    "run.py": "3ea86a38b1a6bd38e49bfe7c200fd2f4ed633e31613a37d0813018653b1f65a6"
+  },
+  "python": "3.12.14",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8",
+    "numba": "0.68.0",
+    "llvmlite": "0.50.0"
+  },
+  "development_result": "120 of 120 batches completed successfully before main evaluation; no parameter retuning after heldout results"
+}

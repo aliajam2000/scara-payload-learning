@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "checks": {
+    "frozen_code_and_protocol_hashes": true,
+    "complete_unique_design": true,
+    "expected_6050_batches": true,
+    "finite_scoring": true,
+    "time_decomposition": true,
+    "cost_accounting": true,
+    "completion_flags": true,
+    "chosen_action_matches_paired_execution": true,
+    "numerical_model_checks": true,
+    "default_equivalence": true
+  },
+  "rows": 6050,
+  "max_chosen_action_time_discrepancy_s": 0.0,
+  "scope": "Synthetic data integrity and numerical consistency; not physical validation or conference acceptance."
+}

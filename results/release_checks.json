@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "checks": {
+    "pre_evaluation_code_hashes_unchanged": true,
+    "main_rows_1080": true,
+    "main_unique_method_scenario_keys": true,
+    "stress_rows_120": true,
+    "completed_main_items_8580": true,
+    "model_validation_pass": true,
+    "manuscript_five_pages": true,
+    "latex_no_overflow_or_unresolved_references": true,
+    "persian_html_self_contained": true,
+    "fresh_environment_demo_reproduces_robot_time_and_success": true
+  },
+  "visual_review": "All five manuscript pages inspected; figures and text legible; no empty trailing page.",
+  "scope": "Linux/Python 3.12 tested. No Windows or hardware execution. Main failure cases preserved."
+}

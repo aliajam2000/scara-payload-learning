@@ -1,0 +1,67 @@
+\begin{thebibliography}{10}
+
+\bibitem{atkeson1986}
+Christopher~G. Atkeson, Chae~H. An, and John~M. Hollerbach.
+\newblock Estimation of inertial parameters of manipulator loads and links.
+\newblock {\em The International Journal of Robotics Research}, 5(3):101--119,
+  1986.
+
+\bibitem{slotine1987}
+Jean-Jacques~E. Slotine and Weiping Li.
+\newblock On the adaptive control of robot manipulators.
+\newblock {\em The International Journal of Robotics Research}, 6(3):49--59,
+  1987.
+
+\bibitem{swevers1997}
+Jan Swevers, Chris Ganseman, Dilek~Bilgin T{\"u}kel, Joris De~Schutter, and
+  Hendrik Van~Brussel.
+\newblock Optimal robot excitation and identification.
+\newblock {\em IEEE Transactions on Robotics and Automation}, 13(5):730--740,
+  1997.
+
+\bibitem{hjalmarsson2005}
+H{\aa}kan Hjalmarsson.
+\newblock From experiment design to closed-loop control.
+\newblock {\em Automatica}, 41(3):393--438, 2005.
+
+\bibitem{bombois2006}
+Xavier Bombois, Gerard Scorletti, Michel Gevers, Paul M.~J. Van~den Hof, and
+  Roland Hildebrand.
+\newblock Least costly identification experiment for control.
+\newblock {\em Automatica}, 42(10):1651--1662, 2006.
+
+\bibitem{feng2020}
+Xuhui Feng and Yuning Jiang.
+\newblock A scheme for simultaneous optimal tracking control and experiment
+  design.
+\newblock {\em IEEE Access}, 8:25364--25371, 2020.
+
+\bibitem{vantilborgh2026}
+Victor Vantilborgh, Hrishikesh Sathyanarayan, Guillaume Crevecoeur, Ian
+  Abraham, and Tom Lefebvre.
+\newblock Learning on the job: Zero-shot task execution under parametric
+  uncertainty via trajectory-parametrized dual control.
+\newblock arXiv:2510.20483v2, 2026.
+\newblock Version 2, 29 September 2026.
+
+\bibitem{solowjow2020}
+Friedrich Solowjow and Sebastian Trimpe.
+\newblock Event-triggered learning.
+\newblock {\em Automatica}, 117:109009, 2020.
+
+\bibitem{zhang2025}
+Bohao Zhang, Zichang Zhou, and Ram Vasudevan.
+\newblock Provably-safe, online system identification.
+\newblock In {\em Proceedings of Robotics: Science and Systems}, 2025.
+
+\bibitem{moreno2006}
+Javier Moreno-Valenzuela.
+\newblock Time-scaling of trajectories for point-to-point robotic tasks.
+\newblock {\em ISA Transactions}, 45(3):407--418, 2006.
+
+\bibitem{lynch2017}
+Kevin~M. Lynch and Frank~C. Park.
+\newblock {\em Modern Robotics: Mechanics, Planning, and Control}.
+\newblock Cambridge University Press, 2017.
+
+\end{thebibliography}

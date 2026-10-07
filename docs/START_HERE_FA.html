@@ -1,0 +1,62 @@
+<!doctype html><html lang="fa" dir="rtl"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>راهنمای پروژهٔ SCARA — نسخهٔ اصلاح‌شده</title><style>
+body{font-family:Tahoma,Arial,sans-serif;line-height:1.95;color:#192d3d;background:#f1f5f7;margin:0}main{max-width:1000px;margin:auto;background:white;padding:36px}h1,h2{color:#086779}h1{line-height:1.5}h2{margin-top:38px;border-bottom:1px solid #dbe5e9;padding-bottom:7px}pre{direction:ltr;text-align:left;background:#102a39;color:#edf7fc;border-radius:7px;padding:18px;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.7}code{font-family:Consolas,monospace}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid #ccdbe0;padding:10px;text-align:right}th{background:#e7f2f3}.note{border-right:5px solid #148293;background:#edf7f8;padding:15px}.warn{border-right:5px solid #cb9640;background:#fff8ea;padding:15px}progress{width:100%;height:24px;accent-color:#138693}.small{font-size:13px;color:#516775}a{color:#086779}@media print{body{background:white}main{padding:0}pre{background:#eef3f5;color:black}h2{break-after:avoid}table,pre{break-inside:avoid}}</style><main>
+<h1>پروژهٔ SCARA: تحویل، فهم پژوهش و اجرای کد</h1>
+<p>نسخهٔ اصلاح‌شده پس از داوری — ۷ اکتبر ۲۰۲۶. این راهنما برای خواندن بدون اینترنت ساخته شده است. نصب اولیهٔ وابستگی‌ها به اینترنت نیاز دارد.</p>
+<h2>۱. دقیقاً چه چیزی را پژوهش می‌کنیم؟</h2>
+<p>یک ربات SCARA چند جسم با جرم و اینرسی یکسان را جابه‌جا می‌کند، اما ابتدا این دو پارامتر را نمی‌داند. ربات هنگام کار معمولی هم از اندازه‌گیری‌ها یاد می‌گیرد. سؤال این است: آیا انجام یک حرکت اضافی مچ برای شناسایی بار، آن‌قدر زمان کارهای بعدی را کم می‌کند که هزینهٔ خودش جبران شود؟</p>
+<p>«پروب» همان حرکت اضافی ۰٫۶ رادیانی مچ و برگشت آن است. «یادگیری منفعل» یعنی تخمین پارامترها از حرکت‌های عادی و نگه‌داشتن بار. «batch-aware» زمان باقی‌مانده و یادگیری احتمالی آینده را پیش‌بینی می‌کند تا دربارهٔ پروب تصمیم بگیرد.</p>
+<div class="note"><strong>نتیجهٔ اصلی نسخهٔ اصلاح‌شده:</strong> در تنظیمات اولیه، میانگین هزینهٔ پروب حتی در دسته‌های ۱۰۰‌تایی جبران نشد؛ با این حال، ۴ مورد از ۲۷ سناریوی موفقِ کم‌چرخش از آن سود بردند و قاعدهٔ تصمیم این فرصت‌ها را از دست داد. اما در مسیر کم‌چرخش با نویز ده برابر و دستهٔ ۶۰‌تایی، حدود ۱٫۰۵ ثانیه صرفه‌جویی کرد و قاعدهٔ تصمیم آن را انتخاب کرد. در نزدیکی مرز سود و زیان، تصمیم‌ها کاملاً درست نیستند؛ این محدودیت در مقاله گزارش شده است.</div>
+<h2>۲. وضعیت سه فاز</h2>
+<progress value="3" max="3"></progress><p>سه فاز نسخهٔ محاسباتی تکمیل شده‌اند: ۳ از ۳.</p>
+<table><tr><th>فاز</th><th>خروجی</th><th>وضعیت</th></tr><tr><td>۱. ممیزی و طراحی</td><td>تطبیق نقد با کد، اصلاح واحدها، بررسی منابع و ثبت پروتکل</td><td>تکمیل</td></tr><tr><td>۲. اجرا و ارزیابی</td><td>۶۰۵۰ اجرای تکمیلی، نقطهٔ تغییر علامت، حساسیت، اصطکاک و کیفیت تصمیم</td><td>تکمیل</td></tr><tr><td>۳. تحویل پژوهشی</td><td>مقالهٔ اصلاح‌شده، داده و کد، پاسخ داوری و همین راهنما</td><td>تکمیل</td></tr></table>
+<p class="small">این نوار، پیشرفت نسخهٔ محاسباتی را نشان می‌دهد. ارسال به کنفرانس، تعیین نویسندگان، انتخاب مجوز انتشار و تطبیق قالب مقصد هنوز انجام نشده است. دادهٔ سخت‌افزاری نداریم.</p>
+<h2>۳. باز کردن پروژه در VS Code</h2>
+<ol><li>فایل ZIP را کامل Extract کنید. فایل‌ها را از داخل ZIP اجرا نکنید.</li><li>در VS Code گزینهٔ <b dir="ltr">File → Open Folder</b> را بزنید.</li><li>پوشهٔ <code dir="ltr">SCARA_Research_Revision1</code> را انتخاب کنید؛ پوشه‌ای که <code>revision.py</code>، <code>run.py</code> و <code>requirements.txt</code> داخل آن هستند.</li><li>از منوی <b dir="ltr">Terminal → New Terminal</b> ترمینال را باز کنید.</li><li>دستورهای بخش مناسب سیستم‌عامل خود را در همان ترمینال اجرا کنید. اجرای مدل با دکمهٔ Run روی یک فایل داخلی توصیه نمی‌شود؛ نقطهٔ ورود پروژه مشخص است.</li></ol>
+<h2>۴. نصب و اجرای اولیه در Windows</h2>
+<p>پایتون ۳٫۱۲ توصیه می‌شود. در PowerShell:</p>
+<pre>py -3.12 --version
+py -3.12 -m venv .venv
+.venv\Scripts\python.exe -m pip install -r requirements.txt
+.venv\Scripts\python.exe run.py demo --out demo_output</pre>
+<p>در این روش نیازی به فعال‌سازی محیط مجازی یا تغییر Execution Policy نیست؛ مفسر همان محیط مستقیماً اجرا می‌شود. خروجی دمو برای هر روش موفقیت، زمان و تعداد پروب را چاپ می‌کند. در اولین اجرا کامپایل Numba کمی زمان می‌برد.</p>
+<h2>۵. نصب و اجرای اولیه در Linux یا macOS</h2>
+<pre>python3.12 --version
+python3.12 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
+.venv/bin/python run.py demo --out demo_output</pre>
+<p class="small">اجرای این نسخه در محیط Linux بررسی شده است. دستورهای Windows و macOS راهنمای استفاده‌اند و آزمون اجرایی روی آن دو سیستم انجام نشده است.</p>
+<h2>۶. بازتولید تحلیل و شکل‌ها بدون اجرای دوبارهٔ شبیه‌سازی</h2>
+<p>در Windows:</p><pre>.venv\Scripts\python.exe revision.py analyze
+.venv\Scripts\python.exe revision.py verify
+.venv\Scripts\python.exe revision.py progress</pre>
+<p>در Linux/macOS:</p><pre>.venv/bin/python revision.py analyze
+.venv/bin/python revision.py verify
+.venv/bin/python revision.py progress</pre>
+<p>دستور analyze از CSVهای تحویلی استفاده می‌کند و شکل‌ها، جدول‌های LaTeX و تحلیل‌های آماری را بازسازی می‌کند. دستور verify باید <code>PASS</code> بدهد. دستور progress تعداد اجراهای ثبت‌شده را نشان می‌دهد. این مسیر برای شروع، سریع‌تر و مناسب‌تر از اجرای کل آزمایش است.</p>
+<h2>۷. اجرای دوبارهٔ تمام آزمایش‌های اصلاحیه</h2>
+<pre># Windows
+.venv\Scripts\python.exe revision.py rerun
+
+# Linux / macOS
+.venv/bin/python revision.py rerun</pre>
+<p>این فرمان ابتدا از CSVهای موجود در پوشهٔ <code>rerun_backups</code> نسخهٔ زمان‌دار می‌گیرد، سپس ۵۸۰۰ اجرای پروتکل اصلی اصلاحیه و ۲۵۰ اجرای بررسی دقیق‌تر مرز را انجام می‌دهد و تحلیل‌ها را بازسازی می‌کند. زمان اجرا به رایانه وابسته است؛ پنجره را تا پایان نبندید. زمان محاسبات برنامه‌ریز می‌تواند بین رایانه‌ها فرق کند.</p>
+<p>برای آزمون‌های عددی تکمیلی:</p><pre># Windows
+.venv\Scripts\python.exe -m src.revision_validation
+
+# Linux / macOS
+.venv/bin/python -m src.revision_validation</pre>
+<h2>۸. فایل‌ها را چگونه بخوانیم؟</h2>
+<table><tr><th>مسیر در پروژه</th><th>کاربرد</th></tr><tr><td dir="ltr">paper/manuscript.pdf</td><td>مقالهٔ اصلاح‌شده</td></tr><tr><td dir="ltr">paper/manuscript.tex / references.bib</td><td>متن قابل ویرایش و منابع</td></tr><tr><td dir="ltr">RESPONSE_TO_REVIEW.md</td><td>پاسخ R1 تا R23 و محدودیت‌های باقی‌مانده</td></tr><tr><td dir="ltr">revision/runs.csv</td><td>۵۸۰۰ نتیجهٔ دسته‌ای</td></tr><tr><td dir="ltr">revision/break_even_runs.csv</td><td>۲۵۰ اجرای اکتشافی برای مرز سود و زیان</td></tr><tr><td dir="ltr">revision/items.csv</td><td>ردیابی هر انتقال، پیش‌بینی و مقدار تحقق‌یافته</td></tr><tr><td dir="ltr">revision/analysis.json</td><td>تحلیل کامل؛ فایل‌های CSV کنار آن برای مطالعهٔ آسان‌تر هستند</td></tr><tr><td dir="ltr">revision/decomposition.csv</td><td>زمان خود پروب، صرفه‌جویی پایین‌دست و هزینهٔ خالص</td></tr><tr><td dir="ltr">revision/decision_quality.csv</td><td>تطابق تصمیم‌ها با بهترین اقدام پس از مشاهدهٔ نتیجه و regret</td></tr><tr><td dir="ltr">src/model_r1.py</td><td>دینامیک، کنترل، تخمین و قاعدهٔ تصمیم در نسخهٔ تکمیلی</td></tr><tr><td dir="ltr">src/revision_experiment.py</td><td>طراحی و اجرای آزمایش‌ها</td></tr><tr><td dir="ltr">results/</td><td>داده‌های تاریخی نسخهٔ اصلی؛ برای حفظ سابقه نگه داشته شده‌اند</td></tr><tr><td dir="ltr">docs/MODEL.md</td><td>استخراج مدل و فرض‌ها</td></tr></table>
+<h2>۹. آموزش فشردهٔ منطق کد</h2>
+<ol><li><b>نمونه‌سازی:</b> seed بار واقعی و مسیر را تعیین می‌کند. برای انصاف، روش‌ها همان سناریو و جریان نویزِ هر قطعه را دریافت می‌کنند.</li><li><b>کنترل:</b> کنترل‌کننده با تخمین جرم و اینرسی گشتاور می‌سازد. ربات شبیه‌سازی‌شده پارامتر واقعی دارد.</li><li><b>یادگیری:</b> هر ۵۰ میلی‌ثانیه، اندازه‌گیری نیرو و تغییر سرعت تخمین را به‌روزرسانی می‌کند. نیروی نگه‌داشتن بار هم برای جرم مفید است.</li><li><b>زمان‌بندی:</b> مدت انتقال با غربال محدودیت‌ها و یک حاشیهٔ ابتکاری وابسته به عدم‌قطعیت انتخاب و به گام‌های ۲۵ میلی‌ثانیه گرد می‌شود.</li><li><b>تصمیم:</b> پس از اولین گرفتن، قاعده دو آینده را مقایسه می‌کند: ادامهٔ کار با یادگیری معمولی، یا یک پروب و سپس ادامهٔ کار.</li><li><b>ارزیابی:</b> زمان واقعی شبیه‌سازی، شکست‌ها، تعداد اقلام کامل‌شده و خطای تصمیم ذخیره می‌شوند.</li></ol>
+<p>برای فهمیدن کد از <code>revision.py</code> شروع کنید، بعد تابع <code>batch</code> در <code>revision_experiment.py</code>، سپس توابع <code>segment</code>، <code>schedule</code> و <code>probe_decision</code> را در <code>model_r1.py</code> بخوانید.</p>
+<h2>۱۰. تفسیر درست عددها</h2>
+<ul><li><b>Probe minus passive:</b> مثبت یعنی پروب زمان بیشتری گرفته؛ منفی یعنی صرفه‌جویی کرده است.</li><li><b>Regret:</b> اختلاف هزینهٔ تصمیم انتخاب‌شده با بهترینِ دو اقدام در همان سناریو پس از دیدن نتایج. کمتر بهتر است؛ این مقایسه‌گر در زمان تصمیم در دسترس ربات نیست.</li><li><b>CI:</b> فاصلهٔ bootstrap از بازنمونه‌گیری seedهای جفت‌شده. اقلام متعدد یک دسته، نمونه‌های مستقل نیستند.</li><li><b>موفقیت مشروط:</b> زمان میانگین فقط بین دسته‌های کامل‌شده با تعداد شکست‌ها خوانده می‌شود. شکست را نباید تولید سریع تلقی کرد.</li><li><b>عدم‌قطعیت:</b> کوچک شدن مقدار P الزاماً به معنای خطای واقعی کمتر یا ایمنی نیست. اصطکاک ناشناخته می‌تواند تخمین را بایاس کند.</li></ul>
+<h2>۱۱. اگر خطا دیدید</h2>
+<table><tr><th>خطا</th><th>اقدام</th></tr><tr><td dir="ltr">No module named numba</td><td>requirements را با همان مفسری نصب کنید که اجرای پروژه را انجام می‌دهد؛ از مسیر محیط مجازی بالا استفاده کنید.</td></tr><tr><td dir="ltr">Can't open file revision.py</td><td>ترمینال در ریشهٔ پروژه نیست. پوشهٔ حاوی revision.py را باز کنید.</td></tr><tr><td dir="ltr">ModuleNotFoundError: src</td><td>فایل داخلی src را مستقیم اجرا نکنید؛ از revision.py یا دستور python -m استفاده کنید.</td></tr><tr><td>توقف ظاهری در اولین اجرا</td><td>ممکن است کامپایل اولیهٔ Numba باشد؛ خروجی و مصرف CPU را بررسی کنید.</td></tr><tr><td>خطای hash پس از ویرایش کد</td><td>پروتکل عمداً تغییر کد منجمد را تشخیص می‌دهد. نسخهٔ تحویلی را برای بازتولید نگه دارید و آزمایش تازه را در کپی جدا، با پروتکل جدید انجام دهید. hash قدیمی را برای پنهان‌کردن تغییر عوض نکنید.</td></tr></table>
+<h2>۱۲. ساخت PDF و کار حرفه‌ای با Git</h2>
+<p>PDF آماده در بسته هست. برای ویرایش متن و ساخت دوباره، یک توزیع LaTeX و latexmk لازم است؛ از ریشهٔ پروژه:</p><pre>cd paper
+latexmk -pdf -interaction=nonstopmode -halt-on-error manuscript.tex</pre>
+<p>کد، پروتکل‌ها، مستندات، فایل bib و منبع مقاله را از همین حالا در مخزن خصوصی نسخه‌بندی کنید. محیط <code>.venv</code>، cacheها و فایل‌های موقت را commit نکنید. داده‌های خام را به‌صورت نسخهٔ ثابت آرشیو کنید؛ اگر اندازه زیاد شد، از release artifact یا ابزار مناسب فایل‌های بزرگ استفاده کنید. قبل از تغییر تنظیمات یک commit مشخص داشته باشید و تحلیل‌های اکتشافی را از ارزیابی اولیه جدا نگه دارید. در این تحویل هیچ مخزن عمومی ایجاد نشده است.</p>
+<div class="warn">برای ارسال واقعی هنوز مقصد، نویسندگان و وابستگی سازمانی، مجوز کد و الزامات افشا/قالب همان کنفرانس باید مشخص شوند. این بسته یک مطالعهٔ شبیه‌سازی با سهم روش‌شناختی محدود است؛ پذیرش کنفرانس یا اعتبارسنجی سخت‌افزاری را تضمین نمی‌کند.</div>
+</main></html>

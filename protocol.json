@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0",
+  "scope": "synthetic rigid SCARA; shared centered payload within each batch; one optional batch-start probe",
+  "status": "frozen before held-out evaluation; development seeds 11-15",
+  "development_seeds": [11, 12, 13, 14, 15],
+  "test_seeds": {"first": 1001, "count": 30},
+  "batch_sizes": [1, 5, 20],
+  "path_families": ["excited", "low_yaw"],
+  "methods": ["fixed_nominal", "passive", "always_probe", "batch_aware", "ignore_passive", "oracle"],
+  "dt_s": 0.002,
+  "payload_mass_kg": [0.2, 1.6],
+  "payload_yaw_inertia_kg_m2": [0.002, 0.025],
+  "failure_penalty_s_per_unfinished_item": 10,
+  "primary_comparison": "paired batch-aware minus passive elapsed cost; all runs included",
+  "uncertainty": "10000 paired bootstrap resamples of scenario seeds per condition; no pooled significance claims",
+  "stress_test": {"first_seed": 2001, "count": 10, "N": 5, "friction_scale": 1.25},
+  "limits": "No collision, flexibility, COM offset, motor heating, actuator delay, torque bias or hardware validation. Approximate covariance is not a safety bound."
+}
